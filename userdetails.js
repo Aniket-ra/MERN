@@ -162,6 +162,7 @@ app.post("/myBlog/update",async(req,res)=>{
     })
     
 })
-app.listen(5000,function(req,res){
+const port=process.env.PORT || 5000
+app.listen(port,function(req,res){
     console.log("server is listening");
 })
